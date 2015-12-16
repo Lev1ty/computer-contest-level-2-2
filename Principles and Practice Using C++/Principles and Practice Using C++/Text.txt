@@ -1,0 +1,11 @@
+I always keep in mind this easy rule: const always applies on the thing at the immediate left of it, 
+if this thing doesn't exists, it applies to the thing on the immediate right.
+
+Microsoft C++ exception: std::out_of_range at memory location 0x0108F928.
+
+Effective C++ - Scott Meyers
+More Effective C++ - Scott Meyers
+C++ Coding Standards - Sutter & Alexandrescu
+
+use get() to read single characters from input
+setprecision() setw() important for output format
