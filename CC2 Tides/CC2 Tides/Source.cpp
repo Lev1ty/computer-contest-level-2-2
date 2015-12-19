@@ -11,8 +11,8 @@ int main()
 		cin >> z;
 		v.push_back(z);
 	}
-	int min_pos = -1, max_pos = -1;
-	int min_val = v.front(), max_val = v.front();
+	int min_pos = 0, max_pos = 0;
+	int min_val = 10000, max_val = 1;
 	for (int i = 0; i < v.size(); ++i)
 	{
 		if (v[i] < min_val)
@@ -26,14 +26,14 @@ int main()
 			max_pos = i;
 		}
 	}
+	bool flag = false;
 	for (int i = min_pos; i < max_pos; ++i)
 	{
 		if (v[i + 1] < v[i])
 		{
-			cout << "unknown" << endl;
-			return 0;
+			flag = true;
 		}
 	}
-	cout << (max_val - min_val) << endl;
-	return 0;
+	if (flag) cout << "unknown" << endl;
+	else cout << (max_val - min_val) << endl;
 }
