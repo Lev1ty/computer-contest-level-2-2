@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\adam yu\documents\github\cc2-q4\cc2 assigning partners1\cc2 assigning partners1\source.cpp(19): error C2371: 'l0': redefinition; different basic types
+  c:\users\adam yu\documents\github\cc2-q4\cc2 assigning partners1\cc2 assigning partners1\source.cpp(16): note: see declaration of 'l0'
