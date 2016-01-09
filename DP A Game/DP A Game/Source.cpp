@@ -21,35 +21,31 @@ int dp(vector<vector<int>>& memo, vector<int>& input, int N)
 			c = n - 2 >= 0 ? 
 				memo.at(m).at(n - 2) : 0;
 			memo.at(m).at(n) = max(input.at(m) + min(a, b), input.at(n) + min(b, c));
-			cout << a << ", " << b << ", " << c << endl;
-			cout << m << ", " << n << ", " << memo.at(m).at(n) << endl;
+			/*cout << a << ", " << b << ", " << c << endl;
+			cout << m << ", " << n << ", " << memo.at(m).at(n) << endl;*/
 		}
 	}
 	return memo.at(0).at(N - 1);
 }
 int main()
 {
-	while (true)
+	input.resize(0); memo.resize(0);
+	int N; cin >> N; memo.resize(N);
+	for (vector<int>& v : memo)
 	{
-		input.resize(0); memo.resize(0);
-		int N; cin >> N; memo.resize(N);
-		for (vector<int>& v : memo)
-		{
-			v.resize(N);
-		}
-		for (int i = 0; i < N; ++i)
-		{
-			int j; cin >> j; input.push_back(j);
-		}
-		cout << dp(memo, input, N) << endl;
-		for (vector<int>& v : memo)
-		{
-			for (int& i : v)
-			{
-				cout << i << ' ';
-			}
-			cout << endl;
-		}cout << endl;
-		cout << endl;
+		v.resize(N);
 	}
+	for (int i = 0; i < N; ++i)
+	{
+		int j; cin >> j; input.push_back(j);
+	}
+	cout << dp(memo, input, N) << endl;
+	/*for (vector<int>& v : memo)
+	{
+		for (int& i : v)
+		{
+			cout << i << ' ';
+		}
+		cout << endl;
+	}cout << endl;*/
 }
