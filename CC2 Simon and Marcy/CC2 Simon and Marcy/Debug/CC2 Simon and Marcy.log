@@ -1,0 +1,6 @@
+﻿  Source.cpp
+c:\users\adam yu\documents\github\cc2-q4\cc2 simon and marcy\cc2 simon and marcy\source.cpp(8): warning C4018: '<=': signed/unsigned mismatch
+c:\users\adam yu\documents\github\cc2-q4\cc2 simon and marcy\cc2 simon and marcy\source.cpp(12): warning C4018: '<=': signed/unsigned mismatch
+c:\users\adam yu\documents\github\cc2-q4\cc2 simon and marcy\cc2 simon and marcy\source.cpp(13): warning C4018: '<=': signed/unsigned mismatch
+c:\users\adam yu\documents\github\cc2-q4\cc2 simon and marcy\cc2 simon and marcy\source.cpp(14): warning C4018: '<=': signed/unsigned mismatch
+  CC2 Simon and Marcy.vcxproj -> C:\Users\Adam Yu\Documents\GitHub\CC2-Q4\CC2 Simon and Marcy\Debug\CC2 Simon and Marcy.exe
